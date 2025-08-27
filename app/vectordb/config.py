@@ -9,7 +9,7 @@ load_dotenv()
 class VectorDBConfig:
     def __init__(self):
         self.client = chromadb.PersistentClient(
-            path="./chroma_db",
+            path="chroma_db",
             settings=Settings(
                 anonymized_telemetry=False,
                 allow_reset=True
